@@ -1,0 +1,161 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "vremenagrotesk", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.scroller-top {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+#turning-circle {
+  max-height: 50px;
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.welcome {
+  height: 90vh;
+}
+
+.welcome .logo {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.logo > img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.apply{
+  font-size: 5rem;
+  position: absolute;
+  margin: auto;
+  top: 25vh;
+  left: 2rem;
+  z-index: 999;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+
+.info div {
+  border: black 2px solid;
+  padding: 2rem;
+  width: 25%;
+  transform-origin: left;
+  transition: all 500ms linear;
+}
+
+.info div:hover {
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .info {
+    flex-direction: column;
+  }
+  .info div {
+    padding: 2rem;
+    padding-right: 6rem;
+    width: 100%;
+  }
+  .info div:hover {
+    width: initial;
+  }
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-style: italic;
+}
+p {
+  text-indent: 2rem;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+ul li {
+  list-style: none;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.violet {
+  color: #c982fa;
+}
+
+.about {
+  background: url("assets/about_bg.png");
+  background-size: cover;
+  background-position: center center;
+}
+.application {
+  background: url("assets/application_bg.png");
+  background-size: cover;
+  background-position: top left;
+}
+.timeline {
+  background: url("assets/timeline_bg3.png");
+  background-size: auto;
+  background-position: top center;
+}
+.cost {
+  background: url("assets/cost_bg.png");
+  background-size: cover;
+  background-position: top center;
+}
+
+button{
+  color: black;
+  background: white;
+  border: 4px black solid;
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+button:hover{
+  color: white;
+  background: grey;
+  border: 4px black solid;
+}

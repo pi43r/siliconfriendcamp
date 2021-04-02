@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="GitLab Pages">
+  <title>𝑺𝑰𝑳𝑰𝑪𝑶𝑵 𝑭𝑹𝑰𝑬𝑵𝑫 𝑪𝑨𝑴𝑷</title>
+
+  <link rel="stylesheet" href="font/vremenagrotesk_italic_macroman/stylesheet.css">
+  <link rel="stylesheet" href="font/vremenagrotesk_regular_macroman/stylesheet.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="js/marquee3k.min.js"></script>
+  <script defer src="js/movethatlogo.js"></script>
+</head>
+
+<body>
+  <div class="scroller-top">
+    <button class="apply">apply</button>
+    <img id="turning-circle" src="assets/top_left_circle.png" alt="">
+    <marquee class=".marquee3k" data-speed="1.0">
+      Dear Humans, This is a friendly invitation to our camp in the Austrian mountains. In a 5
+      day retreat we will explore computational intelligences and live together side by side. The retreat will be hosted
+      by servus.at and it's happening in the second half of July 2021.
+    </marquee>
+  </div>
+  <div class="welcome">
+    <svg class="bg" width="100%" height="100%">
+      <defs>
+        <filter id="turbulent-dissolve" x="0%" y="0%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.01" />
+          <feColorMatrix type="luminanceToAlpha" />
+          <feComponentTransfer>
+            <feFuncA type="linear" slope="0">
+              <animate attributeName="slope" values="0;0;0;0;0;0.5;1;1.5;2;2;2;2;2;2;1.5;1;0.5;0" dur="6s"
+                repeatCount="indefinite" />
+            </feFuncA>
+          </feComponentTransfer>
+          <feComponentTransfer>
+            <feFuncA type="discrete" tableValues="0 1" />
+          </feComponentTransfer>
+          <feGaussianBlur stdDeviation="1" />
+          <feComposite operator="in" in="SourceGraphic" result="overlay" />
+          <feImage xlink:href="assets/bg/bg_layer1.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"
+            result="underlay" />
+          <feComposite operator="over" in="overlay" in- 2="underlay" />
+        </filter>
+      </defs>
+      <image filter="url(#turbulent-dissolve)" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"
+        xlink:href="assets/bg/bg_layer2.png" />
+    </svg>
+    <div class="logo">
+      <img src="assets/SFC/SFC_layer1.svg" alt="">
+      <img src="assets/SFC/SFC_layer2.svg" alt="">
+    </div>
+  </div>
+  <div class="info">
+    <div class="about">
+      <h2>about</h2>
+      <p>The theme of the retreat is "Conversations with Computers". Our goal is to enable embodied networks through the
+        development of new forms of computational intelligence. We invite people of all ages and backgrounds who are
+        interested in machine intelligence, cyborgs, data feminism, conversation design, telepathy, art, science, and
+        future societies. There are no specific requirements, except for a certain level of curiosity and
+        adventurousness. You should be open to try new things, and be willing to share your ideas. There will be some
+        online meetings beforehand, where we will get to know each other and our silicon companions. We want to discuss
+        the ethics of current machine learning techniques, look into the future of extended consciousness and do some
+        hands-on exercises to create live personas. For this we rely on the expertise of the participants to share their
+        knowledge and exchange ideas. We want to create a setting where people and machines can freely exchange
+        information and value. But we also want to encourage a critical gaze on current AI models and develop
+        alternative ideas, far from societal norms. *Partly generated with GPT3</p>
+    </div>
+    <div class="application">
+      <h2>application</h2>
+      <p>Your submission should identify an area of interest with a tangible goal that can be developed in a couple of
+        months. While we are looking for people interested in artificial intelligence, we define the term very broadly
+        and would like to push the boundaries of what it means. The outcome of your project can of course be an
+        autonomous speaking robot, but can also come in the form of writing, video, performance or something completely
+        different.</p>
+      <p> Your submission will be reviewed by servus team members and invited guests to form a diverse selection of around 10
+        humans. If you are interested fill out the form, it shouldn't take you longer than 1 hour.</p>
+
+        <button>apply</button>
+    </div>
+    <div class="timeline">
+      <h2>timeline</h2>
+      <ul>
+        <li><span class="violet">9. April</span> - Application Deadline</li>
+        <li><span class="violet">23. April</span> - Jury Decision</li>
+        <li><span class="violet">June</span> - Bi-weekly Online Hangouts</li>
+        <li><span class="violet">July (TBA)</span> - Silicon Friend Camp</li>
+        <li><span class="violet">Oct/Nov</span> - Exhibition</li>
+      </ul>
+    </div>
+    <div class="cost">
+      <h2>cost</h2>
+      <p>The program is sponsored by LINZimPULS, so we can cover travel, lodge and food.</p>
+      <p> If you need materials to work with, please define them in the application form and we will see if we can
+        provide them.</p>
+    </div>
+  </div>
+</body>
+
+</html>
