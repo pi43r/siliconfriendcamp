@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -8,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "vremenagrotesk", sans-serif;
+  font-family: "vremenagroteskbook", sans-serif;
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -22,7 +23,8 @@ body {
   width: calc(100% - 20px);
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  letter-spacing:-1.3px;
 }
 
 #turning-circle {
@@ -40,19 +42,20 @@ body {
 }
 
 .welcome {
-  height: 90vh;
+  height: 85vh;
 }
 
 .welcome .logo {
   position: absolute;
   margin: 0 auto;
   width: 100%;
-  height: 100%;
+  height: 90%;
   top: 0;
 }
 
-.logo > img {
+.logo img {
   position: absolute;
+  width: 90%;
   margin: auto;
   top: 0;
   left: 0;
@@ -60,13 +63,14 @@ body {
   right: 0;
 }
 
-.apply{
+.apply {
   font-size: 5rem;
   position: absolute;
   margin: auto;
   top: 25vh;
   left: 2rem;
   z-index: 999;
+  letter-spacing:-3.5px;
 }
 
 .info {
@@ -100,14 +104,67 @@ body {
   }
 }
 
+.violet {
+  color: #aa1cfc;
+}
+
+.about {
+  background: url("https://cdn.glitch.com/d16c3eff-d0c3-4fe0-a6e0-e96c63374fc4%2Fabout_bg3.png?v=1617444666772");
+  background-size: cover;
+  background-position: center center;
+  
+}
+.application {
+  background: url("https://cdn.glitch.com/d16c3eff-d0c3-4fe0-a6e0-e96c63374fc4%2Fapplication_bg3.png?v=1617445074417");
+  background-size: cover;
+  background-position: top left;
+}
+.timeline {
+  background: url("assets/timeline_bg3.png");
+  background-size: auto;
+  background-position: top center;
+}
+.cost {
+  background: url("https://cdn.glitch.com/d16c3eff-d0c3-4fe0-a6e0-e96c63374fc4%2Fcost_bg2.png?v=1617396640209");
+  background-size: auto; 
+  /* cover fills the frame, contain resizes so it fits inside the frame, auto uses the initial px values of the image  */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images */
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+button {
+  color: black;
+  background: white;
+  border: 4px black solid;
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  background: #aa1cfc;
+  border: 4px #deff00 solid;
+}
+
+
+/* typography */
+
 h2 {
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-style: italic;
+  letter-spacing:-3px;
+  margin-top: 0;
+  word-break: break-all;
+  line-height: 0.6;
 }
 p {
   text-indent: 2rem;
   font-size: 2rem;
-  line-height: 1.5;
+  line-height: 1.2;
+  letter-spacing:-1px;
+  
 }
 
 ul {
@@ -118,44 +175,4 @@ ul li {
   list-style: none;
   font-size: 2rem;
   margin-bottom: 2rem;
-}
-
-.violet {
-  color: #c982fa;
-}
-
-.about {
-  background: url("assets/about_bg.png");
-  background-size: cover;
-  background-position: center center;
-}
-.application {
-  background: url("assets/application_bg.png");
-  background-size: cover;
-  background-position: top left;
-}
-.timeline {
-  background: url("assets/timeline_bg3.png");
-  background-size: auto;
-  background-position: top center;
-}
-.cost {
-  background: url("assets/cost_bg.png");
-  background-size: cover;
-  background-position: top center;
-}
-
-button{
-  color: black;
-  background: white;
-  border: 4px black solid;
-  padding: 1rem;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-button:hover{
-  color: white;
-  background: grey;
-  border: 4px black solid;
 }
