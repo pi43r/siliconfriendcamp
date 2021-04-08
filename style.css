@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 1rem;
 }
 
 *,
@@ -73,12 +74,18 @@ body {
   letter-spacing:-3.5px;
 }
 
+.center{
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2rem;
+}
+
 .info {
   display: flex;
   flex-direction: row;
 }
 
-.info div {
+.info > div {
   border: black 2px solid;
   padding: 2rem;
   width: 25%;
@@ -94,12 +101,12 @@ body {
   .info {
     flex-direction: column;
   }
-  .info div {
+  .info > div {
     padding: 2rem;
     padding-right: 6rem;
     width: 100%;
   }
-  .info div:hover {
+  .info > div:hover {
     width: initial;
   }
 }
@@ -109,13 +116,13 @@ body {
 }
 
 .about {
-  background: url("https://cdn.glitch.com/d16c3eff-d0c3-4fe0-a6e0-e96c63374fc4%2Fabout_bg3.png?v=1617444666772");
+  background: url("assets/about_bg3.png");
   background-size: cover;
   background-position: center center;
   
 }
 .application {
-  background: url("https://cdn.glitch.com/d16c3eff-d0c3-4fe0-a6e0-e96c63374fc4%2Fapplication_bg3.png?v=1617445074417");
+  background: url("assets/application_bg3.png");
   background-size: cover;
   background-position: top left;
 }
@@ -125,7 +132,7 @@ body {
   background-position: top center;
 }
 .cost {
-  background: url("https://cdn.glitch.com/d16c3eff-d0c3-4fe0-a6e0-e96c63374fc4%2Fcost_bg2.png?v=1617396640209");
+  background: url("assets/cost_bg2.png");
   background-size: auto; 
   /* cover fills the frame, contain resizes so it fits inside the frame, auto uses the initial px values of the image  */
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images */
@@ -133,16 +140,17 @@ body {
   background-position: top center;
 }
 
-button {
+.btn {
   color: black;
   background: white;
   border: 4px black solid;
   padding: 1rem;
   font-size: 2rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
-button:hover {
+.btn:hover {
   color: white;
   background: #aa1cfc;
   border: 4px #deff00 solid;
@@ -175,4 +183,27 @@ ul li {
   list-style: none;
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+
+a{
+  color: #aa1cfc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #deff00;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing:-1px;
+  border-bottom: 20px black solid ;
+}
+
+footer > div {
+  width: 25%;
+  padding: 1rem;
 }
