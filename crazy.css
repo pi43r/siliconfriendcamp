@@ -121,7 +121,7 @@
   top: 14%;
   left: 2%;
   height: 38%;
-  animation: btm2top 3s linear;
+  animation: btm2top 4s linear;
   animation-iteration-count: 1;
 }
 
@@ -139,7 +139,7 @@
   position: absolute;
   bottom: 0;
   left: 2%;
-  animation: left2right 10s linear infinite;
+  animation: left2right 100s linear infinite;
 }
 
 @keyframes left2right {
@@ -158,9 +158,9 @@
 #shadow{
   position: absolute;
   bottom: 0;
-  left: -10%;
-  animation: left2right 60s linear infinite;
-  z-index: 60;
+  left: -5%;
+  animation: left2right 160s linear infinite;
+  z-index: 110;
 }
 
 #green-land{
@@ -168,7 +168,7 @@
   bottom: 3%;
   right: -10%;
   animation: floatblur 120s ease infinite;
-  z-index: 55;
+  z-index: 100;
 }
 
 
